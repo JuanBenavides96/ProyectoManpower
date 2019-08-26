@@ -4,6 +4,7 @@ import edu.cecar.componentes.baseDatos.ConectarMySQL;
 import edu.cecar.modelos.Empleado;
 import java.sql.Date;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 /**
@@ -33,9 +34,7 @@ public class ControladorEmpleado {
     public Empleado consultar(String codigo){
         Empleado empleado = null;
        
-        PreparedStatement preparedStatement = 
-        
-        ResultSet rs = s.executeQuery ("select * from persona");
+        //PreparedStatement preparedStatement = ResultSet preparedStatement = s.executeQuery ("select * from persona");
         return empleado;
     }
     public void consultar(){}
